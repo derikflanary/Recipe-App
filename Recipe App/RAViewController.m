@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.rightBarButtonItem = [self editButtonItem];
     self.title = @"Recipe App";
     self.tableView = [[UITableView alloc] initWithFrame:self.view.frame];
     self.dataSource = [[RATAbleViewDataSource alloc] init];
@@ -27,6 +28,7 @@
     [self.dataSource registerTableView:self.tableView];
     [self.view addSubview:self.tableView];
     
+    //self.editButtonItem
     
     
     // Do any additional setup after loading the view.
