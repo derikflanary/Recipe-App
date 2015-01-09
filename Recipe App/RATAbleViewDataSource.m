@@ -8,11 +8,15 @@
 
 #import "RATAbleViewDataSource.h"
 #import "RARecipes.h"
+#import "TypeOneTableViewCell.h"
+#import "TypeTwoTableViewCell.h"
 
 
 @implementation RATAbleViewDataSource
+
+
 - (void) registerTableView:(UITableView *)tableView{
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    [tableView registerClass:[TypeOneTableViewCell class] forCellReuseIdentifier:@"Cell One"];
     
 }
 
@@ -30,9 +34,11 @@
 // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     //choose pile of cells to draw *cell from
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    
+    
+    TypeOneTableViewCell *cell = (TypeOneTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"Cell One"];
     
      cell.textLabel.text = [RARecipes titleAtIndex:indexPath.row];
     

@@ -22,6 +22,9 @@
 		EE07E4801A5F7BF7001B00E9 /* RAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE07E47F1A5F7BF7001B00E9 /* RAViewController.m */; };
 		EE07E4831A5F7CEF001B00E9 /* RATAbleViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EE07E4821A5F7CEF001B00E9 /* RATAbleViewDataSource.m */; };
 		EE07E4861A5F82D4001B00E9 /* RARecipes.m in Sources */ = {isa = PBXBuildFile; fileRef = EE07E4851A5F82D4001B00E9 /* RARecipes.m */; };
+		EECCE33E1A606257009FB570 /* TypeOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EECCE33D1A606257009FB570 /* TypeOneTableViewCell.m */; };
+		EECCE3411A606277009FB570 /* TypeTwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EECCE3401A606277009FB570 /* TypeTwoTableViewCell.m */; };
+		EECCE3431A608FA6009FB570 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = EECCE3421A608FA6009FB570 /* 02.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,11 @@
 		EE07E4821A5F7CEF001B00E9 /* RATAbleViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATAbleViewDataSource.m; sourceTree = "<group>"; };
 		EE07E4841A5F82D4001B00E9 /* RARecipes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RARecipes.h; sourceTree = "<group>"; };
 		EE07E4851A5F82D4001B00E9 /* RARecipes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RARecipes.m; sourceTree = "<group>"; };
+		EECCE33C1A606257009FB570 /* TypeOneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeOneTableViewCell.h; sourceTree = "<group>"; };
+		EECCE33D1A606257009FB570 /* TypeOneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeOneTableViewCell.m; sourceTree = "<group>"; };
+		EECCE33F1A606277009FB570 /* TypeTwoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypeTwoTableViewCell.h; path = ../TypeTwoTableViewCell.h; sourceTree = "<group>"; };
+		EECCE3401A606277009FB570 /* TypeTwoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TypeTwoTableViewCell.m; path = ../TypeTwoTableViewCell.m; sourceTree = "<group>"; };
+		EECCE3421A608FA6009FB570 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +132,11 @@
 				EE07E4821A5F7CEF001B00E9 /* RATAbleViewDataSource.m */,
 				EE07E4841A5F82D4001B00E9 /* RARecipes.h */,
 				EE07E4851A5F82D4001B00E9 /* RARecipes.m */,
+				EECCE33C1A606257009FB570 /* TypeOneTableViewCell.h */,
+				EECCE33D1A606257009FB570 /* TypeOneTableViewCell.m */,
+				EECCE33F1A606277009FB570 /* TypeTwoTableViewCell.h */,
+				EECCE3401A606277009FB570 /* TypeTwoTableViewCell.m */,
+				EECCE3421A608FA6009FB570 /* 02.png */,
 				71F67B62192C8D6A00E609F1 /* Images.xcassets */,
 				71F67B57192C8D6A00E609F1 /* Supporting Files */,
 			);
@@ -237,6 +250,7 @@
 			files = (
 				71F67B5B192C8D6A00E609F1 /* InfoPlist.strings in Resources */,
 				71F67B63192C8D6A00E609F1 /* Images.xcassets in Resources */,
+				EECCE3431A608FA6009FB570 /* 02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +271,8 @@
 			files = (
 				71F67B5D192C8D6A00E609F1 /* main.m in Sources */,
 				71F67B61192C8D6A00E609F1 /* RAAppDelegate.m in Sources */,
+				EECCE3411A606277009FB570 /* TypeTwoTableViewCell.m in Sources */,
+				EECCE33E1A606257009FB570 /* TypeOneTableViewCell.m in Sources */,
 				EE07E4861A5F82D4001B00E9 /* RARecipes.m in Sources */,
 				EE07E4801A5F7BF7001B00E9 /* RAViewController.m in Sources */,
 				EE07E4831A5F7CEF001B00E9 /* RATAbleViewDataSource.m in Sources */,
