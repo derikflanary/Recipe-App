@@ -24,6 +24,7 @@
 		EE07E4861A5F82D4001B00E9 /* RARecipes.m in Sources */ = {isa = PBXBuildFile; fileRef = EE07E4851A5F82D4001B00E9 /* RARecipes.m */; };
 		EECCE33E1A606257009FB570 /* TypeOneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EECCE33D1A606257009FB570 /* TypeOneTableViewCell.m */; };
 		EECCE3431A608FA6009FB570 /* 02.png in Resources */ = {isa = PBXBuildFile; fileRef = EECCE3421A608FA6009FB570 /* 02.png */; };
+		EECCE34F1A61A8D8009FB570 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECCE34E1A61A8D8009FB570 /* DetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		EECCE33C1A606257009FB570 /* TypeOneTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeOneTableViewCell.h; sourceTree = "<group>"; };
 		EECCE33D1A606257009FB570 /* TypeOneTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeOneTableViewCell.m; sourceTree = "<group>"; };
 		EECCE3421A608FA6009FB570 /* 02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 02.png; sourceTree = "<group>"; };
+		EECCE34D1A61A8D8009FB570 /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		EECCE34E1A61A8D8009FB570 /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,13 +128,15 @@
 				71F67B60192C8D6A00E609F1 /* RAAppDelegate.m */,
 				EE07E47E1A5F7BF7001B00E9 /* RAViewController.h */,
 				EE07E47F1A5F7BF7001B00E9 /* RAViewController.m */,
-				EE07E4811A5F7CEF001B00E9 /* RATAbleViewDataSource.h */,
-				EE07E4821A5F7CEF001B00E9 /* RATAbleViewDataSource.m */,
+				EECCE34D1A61A8D8009FB570 /* DetailsViewController.h */,
+				EECCE34E1A61A8D8009FB570 /* DetailsViewController.m */,
 				EE07E4841A5F82D4001B00E9 /* RARecipes.h */,
 				EE07E4851A5F82D4001B00E9 /* RARecipes.m */,
 				EECCE33C1A606257009FB570 /* TypeOneTableViewCell.h */,
 				EECCE33D1A606257009FB570 /* TypeOneTableViewCell.m */,
 				EECCE3421A608FA6009FB570 /* 02.png */,
+				EE07E4811A5F7CEF001B00E9 /* RATAbleViewDataSource.h */,
+				EE07E4821A5F7CEF001B00E9 /* RATAbleViewDataSource.m */,
 				71F67B62192C8D6A00E609F1 /* Images.xcassets */,
 				71F67B57192C8D6A00E609F1 /* Supporting Files */,
 			);
@@ -268,6 +273,7 @@
 				71F67B61192C8D6A00E609F1 /* RAAppDelegate.m in Sources */,
 				EECCE33E1A606257009FB570 /* TypeOneTableViewCell.m in Sources */,
 				EE07E4861A5F82D4001B00E9 /* RARecipes.m in Sources */,
+				EECCE34F1A61A8D8009FB570 /* DetailsViewController.m in Sources */,
 				EE07E4801A5F7BF7001B00E9 /* RAViewController.m in Sources */,
 				EE07E4831A5F7CEF001B00E9 /* RATAbleViewDataSource.m in Sources */,
 			);

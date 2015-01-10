@@ -16,7 +16,7 @@
     
     
     self = [super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"Cell One"];
-    self.backgroundColor = [UIColor greenColor];
+    self.backgroundColor = [UIColor whiteColor];
     self.detailTextLabel.font = [UIFont fontWithName:@"Arial" size:12.0f];
     self.detailTextLabel.font = [UIFont boldSystemFontOfSize:12];
     self.imageView.image = [UIImage imageNamed:@"02.png"];

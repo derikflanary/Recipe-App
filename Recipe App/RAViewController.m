@@ -10,10 +10,12 @@
 #import "RATAbleViewDataSource.h"
 #import "RARecipes.h"
 #import "TypeOneTableViewCell.h"
+#import "DetailsViewController.h"
 
 
 @interface RAViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
+
 //@property (nonatomic, strong) RATAbleViewDataSource *dataSource;
 
 @end
@@ -45,7 +47,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     return [RARecipes count];
-    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -57,50 +58,32 @@
 // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    //choose pile of cells to draw *cell from
-    
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    
+    TypeOneTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell One"];
     if (!cell){
-        cell = [UITableViewCell new];
-        
+        cell = [TypeOneTableViewCell new];
     }
-
-    
     cell.textLabel.text = [RARecipes titleAtIndex:indexPath.row];
     
     //cell.textLabel.text = @"Recipes";
-    
     return cell;
-    
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    
     return @"Recipes";
 }
 
-
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    //NSString *title = [self titles][indexPath.row]; same as calling "objectAtIndex"
+    DetailsViewController * detailViewController = [DetailsViewController new];
+    detailViewController.recipeIndex = indexPath.row;
+   [self.navigationController pushViewController:detailViewController animated:YES];
+    
+  
+}
 
 -(void)editOn{
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

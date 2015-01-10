@@ -18,6 +18,7 @@
 + (NSInteger)ingredientCountAtIndex:(NSInteger)index;
 + (NSString *)ingredientTypeAtIndex:(NSInteger)ingIndex inRecipeAtIndex:(NSInteger)recIndex;
 + (NSString *)ingredientVolumeAtIndex:(NSInteger)ingIndex inRecipeAtIndex:(NSInteger)recIndex;
++ (NSArray *)directionsAtIndex:(NSInteger)index;
 
 
 
