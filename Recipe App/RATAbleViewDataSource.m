@@ -9,7 +9,7 @@
 #import "RATAbleViewDataSource.h"
 #import "RARecipes.h"
 #import "TypeOneTableViewCell.h"
-#import "TypeTwoTableViewCell.h"
+
 
 
 @implementation RATAbleViewDataSource
@@ -38,7 +38,7 @@
     //choose pile of cells to draw *cell from
     
     
-    TypeOneTableViewCell *cell = (TypeOneTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"Cell One"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
      cell.textLabel.text = [RARecipes titleAtIndex:indexPath.row];
     
